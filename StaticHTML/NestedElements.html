@@ -22,12 +22,12 @@
 	// and show the error in chrome, then add the key in
 
 	var el = React.createElement("div", 
-		{id : "inner-div-id", key: "uniq-react-key-1"},
+		{id : "inner-div-id", key: "uniq-react-key-1"}, // unique key 1
 		React.createElement("h2", {id: "header-id"}, 
 							"Welcome to the world of React!"));
 
 	var another_el = React.createElement(
-		"p", {id : "para-id", key: "uniq-react-key-2"}, 
+		"p", {id : "para-id", key: "uniq-react-key-2"}, // unique key 2
 		"React seems rather tedious to work with.");
 
 	var element_list = [el, another_el];

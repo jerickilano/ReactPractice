@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"></script>
+	<script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"></script>
+    <style>
+        .my-fruits {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+	<div id="my-react-app"></div>
+<script>
+    var el = React.createElement ("div", {key : "el-key"}, "Some of my favorite fruits");
+
+    var fruit_el1 = React.createElement("li", {key : "O-key"}, "Orange");
+    var fruit_el2 = React.createElement("li", {key : "A-key"}, "Apple");
+    var fruit_el3 = React.createElement("li", {key : "B-key"}, "Banana");
+
+    var element_list = [el, fruit_el1, fruit_el2, fruit_el3];
+
+    // put the array into a react element
+    var list_el = React.createElement("ul", {className: "my-fruits"}, element_list);
+
+    // Render
+    ReactDOM.render(list_el, document.getElementById("my-react-app"));
+</script>
+</body>
+</html>
