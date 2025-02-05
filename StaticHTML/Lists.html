@@ -21,10 +21,20 @@
     var element_list = [el, fruit_el1, fruit_el2, fruit_el3];
 
     // put the array into a react element
-    var list_el = React.createElement("ul", {className: "my-fruits"}, element_list);
+    var list_el = React.createElement("ol", {className: "my-fruits"}, element_list);
 
     // Render
     ReactDOM.render(list_el, document.getElementById("my-react-app"));
 </script>
 </body>
 </html>
+
+<!-- React.createElement() is 
+    - tedios to work with
+    - hard to read and see html structure
+    - code like this is hard to maintain
+    - react uses html like structuring -->
+
+<!-- JSX is JavaScript Syntax Extension
+    - Concise and Familiar: syntax to define tree structure
+    - Easier to read and maintain: HTML-like syntax used by React -->
