@@ -35,6 +35,8 @@ Every components needs to have data (2 ways)
 - Components can call functions to update state
 - Causing the component to re-render itself
 
+Rules Regarding State:
+ 
 1. State should only be modified by called **setState()**
 2. The view is re-rendered only when setState() is called
 3. State updates might be ASYNCHRONOUS
@@ -68,3 +70,7 @@ Every components needs to have data (2 ways)
 2. Defined within a component, can take initial values from props
 3. Are mutated within a component in response to user events
 4. Every component can change its own private state, not the state of its children
+
+### Working with Props
+- Props are immutable: The props passed to a component cannot be updated or changed
+- 
